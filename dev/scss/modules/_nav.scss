@@ -1,0 +1,32 @@
+.nav {
+    z-index: 100;
+    &__burger {
+        width: 46px;
+        height: 46px;
+        cursor: pointer;
+        background: url("..z/assets/icons/burger-menu.svg") no-repeat center $color-royal-blue;
+        background-size: contain;
+        @include respond-to(desktop) {
+            display: none;
+        }
+    }
+    &__item {
+        padding: 0 20px;
+        &_red {
+            background-color: $color-maroon-flush;
+            width: 107px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+    }
+    &__center {
+        @include respond-to(tablet) {
+            display: none;
+        }
+        @include respond-to(desktop) {
+            display: block;
+        }
+    }
+}
