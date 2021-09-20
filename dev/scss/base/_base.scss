@@ -12,12 +12,21 @@
 html,
 body {
     min-height: 100%;
+    font-family: "Nunito light";
+    background-image: url("../assets/images/bg.jpeg");
 }
 
-body {
-    position: relative;
-    // background-color: $color-;
-}
+// body::after {
+//     content: "";
+//     background: url("../assets/images/bg.jpeg");
+//     opacity: 0.4;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     position: absolute;
+//     z-index: -1;
+// }
 
 a {
     text-decoration: none;
@@ -34,4 +43,13 @@ img {
 }
 button {
     cursor: pointer;
+}
+.wrapper {
+    margin: 0 125px;
+}
+
+.text {
+    font-family: $font-light;
+    color: $color-white;
+    font-size: 12px;
 }
