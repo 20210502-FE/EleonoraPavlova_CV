@@ -4,16 +4,33 @@
         text-transform: uppercase;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        gap: 35px;
         grid-template-rows: auto;
+        gap: 35px;
+        justify-items: center;
     }
     &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
         &:hover {
-            content: "";
-            width: 200px;
-            height: 80px;
             border-radius: 50%;
             background-color: $color-white-smoke;
         }
+    }
+    &__name {
+        position: absolute;
+        top: 52%;
+        left: 23%;
+    }
+    &__h1 {
+        padding-bottom: 10px;
+    }
+}
+
+.text-hover {
+    &:hover {
+        color: $color-pink;
     }
 }

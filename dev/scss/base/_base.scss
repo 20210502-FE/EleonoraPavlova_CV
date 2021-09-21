@@ -12,25 +12,14 @@
 html,
 body {
     min-height: 100%;
-    font-family: "Nunito light";
+    position: relative;
     background-image: url("../assets/images/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-// body::after {
-//     content: "";
-//     background: url("../assets/images/bg.jpeg");
-//     opacity: 0.4;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     position: absolute;
-//     z-index: -1;
-// }
 
 a {
     text-decoration: none;
-    // color: $color-;
 }
 
 li {
@@ -49,7 +38,19 @@ button {
 }
 
 .text {
-    font-family: $font-light;
+    font-family: $font-style;
     color: $color-white;
     font-size: 12px;
+    &-thin {
+        font-size: 18px;
+    }
+}
+
+.text-bold {
+    font-family: $font-bold;
+    color: $color-white;
+}
+
+.flex {
+    display: flex;
 }
