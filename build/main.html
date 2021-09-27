@@ -10,19 +10,61 @@
   <body>
     <header class="header wrapper"> 
       <div class="header__box">
-        <div class="header__item-photo"><img src="./assets/images/photo.jpg" alt="photo"></div>
-        <div class="header__item"><a class="header__link text-bold text-hover" href="#">About </a></div>
-        <div class="header__item"> <a class="header__link text-bold text-hover" href="#">Skills </a></div>
-        <div class="header__item"><a class="header__link text-bold text-hover" href="#">Education</a></div>
-        <div class="header__item"><a class="header__link text-bold text-hover" href="#">Portfolio</a></div>
-        <div class="header__item"><a class="header__link text-bold text-hover" href="#">Contact</a></div>
-      </div>
-      <div class="header__name">
-        <div class="header__h1">
-          <h1 class="text-bold">Eleonora Pavlova</h1>
+        <div class="header__item-photo"><img class="header__item-photo_radius" src="./assets/images/photo.jpg" alt="photo"></div>
+        <div class="header__item"><a class="header__link text-bold text-hover flex" href="#">About </a></div>
+        <div class="header__item"> <a class="header__link text-bold text-hover flex" href="#">Skills </a></div>
+        <div class="header__item"><a class="header__link text-bold text-hover flex" href="#">Education</a></div>
+        <div class="header__item"><a class="header__link text-bold text-hover flex" href="#">Portfolio</a></div>
+        <div class="header__item"><a class="header__link text-bold text-hover flex" href="#">Contact</a></div>
+        <div class="header__item-name" id="fullname">
+          <div class="header__h1">
+            <h1 class="text-bold">Eleonora Pavlova</h1>
+          </div>
+          <p class="text">Frontend Developer</p>
         </div>
-        <p class="text text-thin">Front-end Developer </p>
+        <div class="header__social flex">
+          <div class="header__social-wrap"><a class="an" href="https://www.instagram.com/pavl0vaelen/?hl=ru" target="_blank"><img class="header__social-img" src="./assets/icons/insta.svg" alt="insta" target="_blank"></a></div>
+          <div class="header__social-wrap"><a class="an" href="tel:+380687527904"><img class="header__social-img" src="./assets/icons/call.svg" alt="call"></a></div>
+          <div class="header__social-wrap"><a class="an" href="mailto: nebrudko18@gmail.com" target="_blank"> <img class="header__social-img" src="./assets/icons/mail.svg" alt="mail"></a></div>
+          <div class="header__social-wrap"><a class="an" href="https://github.com/EleonoraPavlova" target="_blank"><img class="header__social-img" src="./assets/icons/github.svg" alt="github"></a></div>
+          <div class="header__social-wrap"><a class="an" href="https://join.skype.com/invite/Kf7ZnFPrzv6R" target="_blank"> <img class="header__social-img" src="./assets/icons/skype.svg" alt="skype"></a></div>
+        </div>
       </div>
     </header>
+    <main class="about-me wrapper">
+      <div class="about-me__left" id="summary">
+        <div class="about-me__title flex">
+          <h2 class="text-bold about-me__h2">About me</h2>
+          <div class="about-me__img"><img src="./assets/icons/about.svg" alt="about"></div>
+        </div>
+        <div class="about-me__content">
+          <p class="text">Hello! I’m Eleonora. I am passionate about  Web Design and Front-end Development. I am a beginner Front-end Developer and master tools such as Photoshop, Figma, HTML/CSS/SCSS, Git, VS Code, Gulp, PUG, JavaScript, REACT. I strive to gain new knowledge and easily learn new technologies and methods. I don't have commercial experience, but I will gladly become a part of your team.</p>
+        </div>
+      </div>
+      <div class="about-me__react">
+        <div class="about-me__react-ellipse about-me__react-ellipse_center"></div>
+        <div class="about-me__react-ellipse about-me__react-ellipse_left"></div>
+        <div class="about-me__react-ellipse about-me__react-ellipse_right"></div>
+      </div>
+    </main>
+    <section class="skills wrapper">
+      <ul class="skills__box"> 
+        <li class="skills__item"><img src="./assets/icons/html.svg" alt="html"></li>
+        <li class="skills__item"><img src="./assets/icons/css.svg" alt="css"></li>
+        <li class="skills__item"><img src="./assets/icons/img-scss.svg" alt="img-scss"></li>
+        <li class="skills__item"><img src="./assets/icons/github.svg" alt="github"></li>
+        <li class="skills__item"><img src="./assets/icons/ps.svg" alt="ps"></li>
+        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
+        <li class="skills__item"><img src="./assets/icons/gulp.svg" alt="gulp"></li>
+        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
+        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
+        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
+        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
+        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
+        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
+      </ul>
+    </section>
   </body>
+  <script type="text/javascript" src="js/header.js"></script>
+  <script type="text/javascript" src="js/about.js"></script>
 </html>

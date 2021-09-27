@@ -1,0 +1,105 @@
+.about-me {
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 15% 42% 30%;
+    gap: 40px;
+    justify-items: flex-end;
+    &__title {
+        padding-bottom: 15px;
+    }
+    &__h2 {
+        font-size: 29px;
+        padding-left: 40px;
+    }
+    &__img {
+        width: 45px;
+        height: 45px;
+        margin-left: 20px;
+    }
+    &__content {
+        padding: 15px;
+        background-color: $color-forestgreen;
+        border-radius: 25px;
+    }
+    &__left {
+        grid-column: 2;
+    }
+    &__react {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            width: 25px;
+            height: 25px;
+            background-color: #00d3f8;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            animation: circle 2s linear backwards infinite;
+        }
+        &-ellipse {
+            width: 85%;
+            height: 90px;
+            border: 8px solid #00d3f8;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            &_center {
+                transform: translate3d(-50%, -50%, 0);
+                animation: reactEllipseCenter 3s linear backwards 3s infinite;
+            }
+            &_left {
+                transform: translate3d(-50%, -50%, 0) rotate(60deg);
+                animation: reactEllipseLeft 3s linear backwards 6s infinite;
+            }
+            &_right {
+                transform: translate3d(-50%, -50%, 0) rotate(-60deg);
+                animation: reactEllipseRight 3s backwards 6s infinite;
+            }
+        }
+        @keyframes circle {
+            from {
+                transform: translate3d(-50%, -50%, 0) scale(0);
+            }
+            to {
+                transform: translate3d(-50%, -50%, 0) scale(1);
+            }
+        }
+
+        @keyframes reactEllipseCenter {
+            from {
+                transform: translate3d(-50%, -50%, 0) rotateX(90deg);
+            }
+            to {
+                transform: translate3d(-50%, -50%, 0) rotateX(0deg);
+            }
+        }
+
+        @keyframes reactEllipseLeft {
+            from {
+                transform: translate3d(-50%, -50%, 0) rotate(0deg);
+                opacity: 0;
+            }
+            to {
+                transform: translate3d(-50%, -50%, 0) rotate(60deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes reactEllipseRight {
+            from {
+                transform: translate3d(-50%, -50%, 0) rotate(0deg);
+                opacity: 0;
+            }
+            to {
+                transform: translate3d(-50%, -50%, 0) rotate(-60deg);
+                opacity: 1;
+            }
+        }
+    }
+}

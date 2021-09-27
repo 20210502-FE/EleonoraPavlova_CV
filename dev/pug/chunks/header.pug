@@ -1,18 +1,34 @@
 header.header.wrapper 
     .header__box
         .header__item-photo
-            img(src="./assets/images/photo.jpg", alt="photo")
+            img.header__item-photo_radius(src="./assets/images/photo.jpg", alt="photo")
         .header__item
-            a(href="#").header__link.text-bold.text-hover About 
+            a(href="#").header__link.text-bold.text-hover.flex About 
         .header__item 
-            a(href="#").header__link.text-bold.text-hover Skills 
+            a(href="#").header__link.text-bold.text-hover.flex Skills 
         .header__item
-            a(href="#").header__link.text-bold.text-hover Education
+            a(href="#").header__link.text-bold.text-hover.flex Education
         .header__item
-            a(href="#").header__link.text-bold.text-hover Portfolio
+            a(href="#").header__link.text-bold.text-hover.flex Portfolio
         .header__item
-            a(href="#").header__link.text-bold.text-hover Contact
-    .header__name
-        .header__h1
-            h1.text-bold Eleonora Pavlova
-        p.text.text-thin Front-end Developer 
+            a(href="#").header__link.text-bold.text-hover.flex Contact
+        .header__item-name#fullname
+            .header__h1
+                h1.text-bold Eleonora Pavlova
+            p.text Frontend Developer
+        .header__social.flex
+            .header__social-wrap
+                a(href="https://www.instagram.com/pavl0vaelen/?hl=ru" target="_blank").an
+                    img.header__social-img(src="./assets/icons/insta.svg", alt="insta" target="_blank")
+            .header__social-wrap
+                a(href="tel:+380687527904").an
+                    img.header__social-img(src="./assets/icons/call.svg", alt="call")
+            .header__social-wrap
+                a(href="mailto: nebrudko18@gmail.com" target="_blank").an  
+                    img.header__social-img(src="./assets/icons/mail.svg", alt="mail")
+            .header__social-wrap
+                a(href="https://github.com/EleonoraPavlova" target="_blank").an
+                    img.header__social-img(src="./assets/icons/github.svg", alt="github")
+            .header__social-wrap
+                a(href="https://join.skype.com/invite/Kf7ZnFPrzv6R" target="_blank").an 
+                    img.header__social-img(src="./assets/icons/skype.svg", alt="skype")

@@ -1,0 +1,9 @@
+.skills {
+    &__box {
+        display: grid;
+    }
+    &__item {
+        width: 60px;
+        height: 60px;
+    }
+}
