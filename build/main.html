@@ -11,11 +11,11 @@
     <header class="header wrapper"> 
       <div class="header__box">
         <div class="header__item-photo"><img class="header__item-photo_radius" src="./assets/images/photo.jpg" alt="photo"></div>
-        <div class="header__item"><a class="header__link text-bold text-hover flex" href="#">About </a></div>
-        <div class="header__item"> <a class="header__link text-bold text-hover flex" href="#">Skills </a></div>
-        <div class="header__item"><a class="header__link text-bold text-hover flex" href="#">Education</a></div>
-        <div class="header__item"><a class="header__link text-bold text-hover flex" href="#">Portfolio</a></div>
-        <div class="header__item"><a class="header__link text-bold text-hover flex" href="#">Contact</a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#">About </a></div>
+        <div class="header__item"> <a class="header__link text text-hover flex" href="#">Skills </a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#">Education</a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#">Portfolio</a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#">Contact</a></div>
         <div class="header__item-name" id="fullname">
           <div class="header__h1">
             <h1 class="text-bold">Eleonora Pavlova</h1>
@@ -48,7 +48,11 @@
       </div>
     </main>
     <section class="skills wrapper">
-      <ul class="skills__box"> 
+      <div class="skills__title-wrap flex">
+        <h2 class="text-bold skills__title" id="title">Skills</h2>
+        <div class="skills__title-img" id="icon"><img src="./assets/icons/skills-icon.svg" alt="skills"></div>
+      </div>
+      <ul class="skills__box">
         <li class="skills__item"><img src="./assets/icons/html.svg" alt="html"></li>
         <li class="skills__item"><img src="./assets/icons/css.svg" alt="css"></li>
         <li class="skills__item"><img src="./assets/icons/img-scss.svg" alt="img-scss"></li>
@@ -56,15 +60,19 @@
         <li class="skills__item"><img src="./assets/icons/ps.svg" alt="ps"></li>
         <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
         <li class="skills__item"><img src="./assets/icons/gulp.svg" alt="gulp"></li>
-        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
-        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
-        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
-        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
-        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
-        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
+        <li class="skills__item"><img src="./assets/icons/pug.svg" alt="pug"></li>
+        <li class="skills__item skills__item_react"><img src="./assets/icons/react.svg" alt="react"></li>
+        <li class="skills__item"><img src="./assets/icons/js.svg" alt="logojs"></li>
       </ul>
+    </section>
+    <section class="education wrapper">
+      <div class="education__title-wrap flex">
+        <h2 class="text-bold education__title">Education </h2>
+        <div class="education__title-img"><img src="./assets/icons/educ.svg" alt="educ"></div>
+      </div>
     </section>
   </body>
   <script type="text/javascript" src="js/header.js"></script>
   <script type="text/javascript" src="js/about.js"></script>
+  <script type="text/javascript" src="js/skills.js"></script>
 </html>

@@ -22,7 +22,7 @@
     }
     &__link {
         justify-content: center;
-        width: 100px;
+        width: 120px;
         height: 60px;
         &:hover {
             border-radius: 60%;
@@ -55,24 +55,25 @@
 $an: 0;
 $header__social-wrap: 7;
 
-@keyframes float {
+@keyframes pulse {
     0% {
-        transform: translate(0, 0);
+        transform: scale(0.7);
     }
-
     50% {
-        transform: translate(-50px, 0);
+        transform: scale(1);
     }
-
+    75% {
+        transform: scale(1.15);
+    }
     100% {
-        transform: translate(0, 0);
+        transform: scale(1.3);
     }
 }
 
 @while $an <= $header__social-wrap {
     .an:nth-child(#{$an}) {
         display: inline-block;
-        animation: float 4s infinite ease-in-out;
+        animation: pulse 4s infinite ease-in-out;
         animation-delay: #{$an/3}s;
     }
     $an: $an + 1;
