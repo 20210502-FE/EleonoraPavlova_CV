@@ -11,11 +11,11 @@
     <header class="header wrapper"> 
       <div class="header__box">
         <div class="header__item-photo"><img class="header__item-photo_radius" src="./assets/images/photo.jpg" alt="photo"></div>
-        <div class="header__item"><a class="header__link text text-hover flex" href="#">About </a></div>
-        <div class="header__item"> <a class="header__link text text-hover flex" href="#">Skills </a></div>
-        <div class="header__item"><a class="header__link text text-hover flex" href="#">Education</a></div>
-        <div class="header__item"><a class="header__link text text-hover flex" href="#">Portfolio</a></div>
-        <div class="header__item"><a class="header__link text text-hover flex" href="#">Contact</a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#aboutme"> About </a></div>
+        <div class="header__item"> <a class="header__link text text-hover flex" href="#title">Skills </a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#education">Education</a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#portfolio">Portfolio</a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#contact">Contact</a></div>
         <div class="header__item-name" id="fullname">
           <div class="header__h1">
             <h1 class="text-bold">Eleonora Pavlova</h1>
@@ -34,7 +34,7 @@
     <main class="about-me wrapper">
       <div class="about-me__left" id="summary">
         <div class="about-me__title flex">
-          <h2 class="text-bold about-me__h2">About me</h2>
+          <h2 class="text-bold about-me__h2" id="aboutme">About me </h2>
           <div class="about-me__img"><img src="./assets/icons/about.svg" alt="about"></div>
         </div>
         <div class="about-me__content">
@@ -67,12 +67,29 @@
     </section>
     <section class="education wrapper">
       <div class="education__title-wrap flex">
-        <h2 class="text-bold education__title">Education </h2>
-        <div class="education__title-img"><img src="./assets/icons/educ.svg" alt="educ"></div>
+        <h2 class="text-bold education__title" id="education">Education </h2>
+        <div class="education__title-img" id="symbol"><img src="./assets/icons/educ.svg" alt="educ"></div>
       </div>
+      <ul class="education__box">
+        <li class="education__item flex">
+          <svg class="education__checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="education__checkmark-circle" cx="26" cy="26" r="25" fill="none"></circle>
+            <path class="education__checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
+          </svg>
+          <div class="text">Marine Academy specialist degree (2020)</div>
+        </li>
+        <li class="education__item flex">
+          <svg class="education__checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="education__checkmark-circle" cx="26" cy="26" r="25" fill="none"></circle>
+            <path class="education__checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
+          </svg>
+          <div class="text">Beetroot course Frontend Developer (2021) </div>
+        </li>
+      </ul>
     </section>
   </body>
   <script type="text/javascript" src="js/header.js"></script>
   <script type="text/javascript" src="js/about.js"></script>
   <script type="text/javascript" src="js/skills.js"></script>
+  <script type="text/javascript" src="js/education.js"></script>
 </html>

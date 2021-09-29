@@ -3,19 +3,19 @@ let mark = Date.now();
 let date = setInterval(function () {
     let timePassed = Date.now() - mark;
 
-    if (timePassed >= 3000) {
+    if (timePassed >= 2000) {
         clearInterval(date);
         return;
     }
 
 
-    pencil(timePassed);
+    pen(timePassed);
 
 }, 20);
 
 
-function pencil(timePassed) {
-    skills.style.transform = `translateX(${550 - timePassed / 5}px)`;
+function pen(timePassed) {
+    skills.style.transform = `translateX(${-200 - timePassed / -5}px)`;
 }
 
 const image = document.getElementById("icon");
@@ -29,11 +29,11 @@ let day = setInterval(function () {
     }
 
 
-    pen(timePassed);
+    line(timePassed);
 
-}, 20);
+}, 30);
 
 
-function pen(timePassed) {
-    image.style.transform = `translateX(${550 - timePassed / 5}px)`;
+function line(timePassed) {
+    image.style.transform = `translateX(${800 - timePassed / 5}px)`;
 }
