@@ -1,0 +1,25 @@
+<svg width="88" height="88" xmlns="http://www.w3.org/2000/svg">
+ <title/>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="Mouse">
+   <path fill="#ffffff" id="svg_1" d="m67,31l-5,0l0,11.1843a2.995,2.995 0 0 1 2,2.8157l0,2l16,0l0,-3a13.0147,13.0147 0 0 0 -13,-13z"/>
+   <path fill="#ffffff" id="svg_2" d="m61,52a1.0009,1.0009 0 0 0 1,-1l0,-6a1,1 0 0 0 -2,0l0,6a1.0009,1.0009 0 0 0 1,1z"/>
+   <path fill="#ffffff" id="svg_3" d="m64,51a2.995,2.995 0 0 1 -2,2.8157l0,5.1843a1,1 0 0 1 -2,0l0,-5.1843a2.995,2.995 0 0 1 -2,-2.8157l0,-2l-16,0l0,19a19,19 0 0 0 38,0l0,-19l-16,0l0,2z"/>
+   <path fill="#ffffff" id="svg_4" d="m60,31l-5,0a13.0147,13.0147 0 0 0 -13,13l0,3l16,0l0,-2a2.995,2.995 0 0 1 2,-2.8157l0,-11.1843z"/>
+   <path fill="#ffffff" id="svg_5" d="m56,27l0,2l10,0l0,-2a1.0029,1.0029 0 0 0 -1,-1l-8,0a1.0029,1.0029 0 0 0 -1,1z"/>
+   <path fill="#ffffff" id="svg_6" d="m60,17l0,7l2,0l0,-7a16,16 0 0 0 -32,0l0,60.5a7.5,7.5 0 0 1 -15,0l0,-1.5l-2,0l0,1.5a9.5,9.5 0 0 0 19,0l0,-60.5a14,14 0 0 1 28,0z"/>
+   <rect fill="#ffffff" id="svg_7" y="14" x="8" width="12" height="2"/>
+   <rect fill="#ffffff" id="svg_8" y="18" x="15" width="5" height="44"/>
+   <rect fill="#ffffff" id="svg_9" y="18" x="8" width="5" height="44"/>
+   <path fill="#ffffff" id="svg_10" d="m14.91,1.5864a1,1 0 0 0 -1.82,0l-4.7336,10.4136l11.2872,0l-4.7336,-10.4136z"/>
+   <rect fill="#ffffff" id="svg_11" y="64" x="8" width="12" height="2"/>
+   <path fill="#ffffff" id="svg_12" d="m20,71l0,-3l-12,0l0,3a3.0033,3.0033 0 0 0 3,3l6,0a3.0033,3.0033 0 0 0 3,-3z"/>
+  </g>
+ </g>
+</svg>
