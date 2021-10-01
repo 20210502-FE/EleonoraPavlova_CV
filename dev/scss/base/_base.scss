@@ -13,12 +13,21 @@ button {
     &_gray {
         color: $color-gray;
     }
+    &_pink {
+        color: $color-pink;
+    }
 }
 
 .text-bold {
     font-family: $font-bold;
     color: $color-white;
     font-size: 29px;
+}
+
+.text-hover {
+    &:hover {
+        color: $color-pink;
+    }
 }
 
 .flex {
