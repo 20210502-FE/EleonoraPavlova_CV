@@ -1,40 +1,49 @@
 
-const education = document.getElementById("education");
-let gooff = Date.now();
-let when = setInterval(function () {
-    let timePassed = Date.now() - gooff;
 
-    if (timePassed >= 3000) {
-        clearInterval(when);
-        return;
-    }
+// подгружение при скролле
+const educElement = document.getElementById('education');
 
-
-    pencil(timePassed);
-
-}, 30);
-
-
-function pencil(timePassed) {
-    education.style.transform = `translateX(${-600 - timePassed / -5}px)`;
+const educationOptions = {
+    root: null,
+    threshold: 1.0
 }
+var educationCb = function (entries, observer) {
+    let start = Date.now();
+    let timer = setInterval(function () {
+        let timePassed = Date.now() - start;
 
-const icon = document.getElementById("symbol");
-let tense = Date.now();
-let sand = setInterval(function () {
-    let timePassed = Date.now() - tense;
+        if (timePassed >= 2000) {
+            clearInterval(timer);
+            return;
+        }
 
-    if (timePassed >= 3000) {
-        clearInterval(sand);
-        return;
-    }
+        educElement.style.transform = `translateX(${-400 - timePassed / -5}px)`;
+    }, 20);
+};
+var educationObserver = new IntersectionObserver(educationCb, educationOptions);
 
-
-    port(timePassed);
-
-}, 30);
+educationObserver.observe(educElement)
 
 
-function port(timePassed) {
-    icon.style.transform = `translateX(${600 - timePassed / 5}px)`;
+
+const icon = document.getElementById('symbol');
+const iconOptions = {
+    root: null,
+    threshold: 1.0
 }
+var iconCb = function (entries, observer) {
+    let tense = Date.now();
+    let sand = setInterval(function () {
+        let timePassed = Date.now() - tense;
+
+        if (timePassed >= 2000) {
+            clearInterval(sand);
+            return;
+        }
+
+        icon.style.transform = `translateX(${400 - timePassed / 5}px)`;
+    }, 20);
+};
+var iconObserver = new IntersectionObserver(iconCb, iconOptions);
+
+iconObserver.observe(icon)
