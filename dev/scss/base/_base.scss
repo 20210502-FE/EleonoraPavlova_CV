@@ -1,46 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    min-height: 100%;
-    font-family: "Nunito light";
-    background-image: url("../assets/images/bg.jpeg");
-}
-
-// body::after {
-//     content: "";
-//     background: url("../assets/images/bg.jpeg");
-//     opacity: 0.4;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     position: absolute;
-//     z-index: -1;
-// }
-
-a {
-    text-decoration: none;
-    // color: $color-;
-}
-
-li {
-    list-style: none;
-}
-
-img {
-    width: 100%; // це для того, щоб картинка не іскажалась при різних розширенням
-    height: auto;
-}
 button {
     cursor: pointer;
 }
@@ -49,7 +6,42 @@ button {
 }
 
 .text {
-    font-family: $font-light;
-    color: $color-white;
-    font-size: 12px;
+    font-family: $font-style;
+    color: $color-fortext;
+    font-size: 18px;
+    line-height: 25px;
+    &_gray {
+        color: $color-gray;
+    }
+    &_pink {
+        color: $color-pink;
+    }
+}
+
+.text-bold {
+    font-family: $font-bold;
+    color: $color-fortext;
+    font-size: 29px;
+}
+
+.text-hover {
+    &:hover {
+        color: $color-pink;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
 }

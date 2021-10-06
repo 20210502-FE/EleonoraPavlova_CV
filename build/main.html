@@ -9,14 +9,154 @@
   </head>
   <body>
     <header class="header wrapper"> 
-      <ul class="header__box"> 
-        <li class="header__item"><img src="./assets/images/photo.jpg" alt="photo"></li>
-        <li class="header_item"><a class="header__link text" href=""> About </a></li>
-        <li class="header__item"> <a class="header__link text" href="">Skills </a></li>
-        <li class="header__item"><a class="header__link text" href="">Education</a></li>
-        <li class="header__item"><a class="header__link text" href="">Portfolio</a></li>
-        <li class="header__item"><a class="header__link text" href="">Contact</a></li>
-      </ul>
+      <div class="header__box">
+        <div class="header__item-photo"><img class="header__item-photo_radius" src="./assets/images/photo.jpg" alt="photo"></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#aboutme"> About </a></div>
+        <div class="header__item"> <a class="header__link text text-hover flex" href="#title">Skills </a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#education">Education</a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#portfolio">Portfolio</a></div>
+        <div class="header__item"><a class="header__link text text-hover flex" href="#contact">Contact</a></div>
+        <div class="header__item-name" id="fullname">
+          <div class="header__h1">
+            <h1 class="text-bold">Eleonora Pavlova</h1>
+          </div>
+          <p class="text">Frontend Developer</p>
+        </div>
+        <div class="header__social flex">
+          <div class="header__social-wrap"><a class="an" href="https://www.instagram.com/pavl0vaelen/?hl=ru" target="_blank"><img class="header__social-img" src="./assets/icons/insta.svg" alt="insta" target="_blank"></a></div>
+          <div class="header__social-wrap"><a class="an" href="tel:+380687527904"><img class="header__social-img" src="./assets/icons/call.svg" alt="call"></a></div>
+          <div class="header__social-wrap"><a class="an" href="mailto: nebrudko18@gmail.com" target="_blank"> <img class="header__social-img" src="./assets/icons/mail.svg" alt="mail"></a></div>
+          <div class="header__social-wrap"><a class="an" href="https://github.com/EleonoraPavlova" target="_blank"><img class="header__social-img" src="./assets/icons/github.svg" alt="github"></a></div>
+          <div class="header__social-wrap"><a class="an" href="https://join.skype.com/invite/Kf7ZnFPrzv6R" target="_blank"> <img class="header__social-img" src="./assets/icons/skype.svg" alt="skype"></a></div>
+        </div>
+      </div>
     </header>
+    <main class="about-me wrapper">
+      <div class="about-me__left" id="summary">
+        <div class="about-me__title flex">
+          <h2 class="text-bold about-me__h2" id="aboutme">About me </h2>
+          <div class="about-me__img"><img src="./assets/icons/about.svg" alt="about"></div>
+        </div>
+        <div class="about-me__content">
+          <p class="text">Hello! I’m Eleonora. I am passionate about  Web Design and Front-end Development. I am a beginner Front-end Developer and master tools such as Photoshop, Figma, HTML/CSS/SCSS, Git, VS Code, Gulp, PUG, JavaScript, REACT. I strive to gain new knowledge and easily learn new technologies and methods. I don't have commercial experience, but I will gladly become a part of your team.</p>
+        </div>
+      </div>
+      <div class="about-me__react">
+        <div class="about-me__react-ellipse about-me__react-ellipse_center"></div>
+        <div class="about-me__react-ellipse about-me__react-ellipse_left"></div>
+        <div class="about-me__react-ellipse about-me__react-ellipse_right"></div>
+      </div>
+    </main>
+    <section class="skills wrapper">
+      <div class="skills__title-wrap flex">
+        <h2 class="text-bold skills__title" id="title">Skills</h2>
+        <div class="skills__title-img" id="icon"><img src="./assets/icons/skills-icon.svg" alt="skills"></div>
+      </div>
+      <ul class="skills__box">
+        <li class="skills__item"><img src="./assets/icons/html.svg" alt="html"></li>
+        <li class="skills__item"><img src="./assets/icons/css.svg" alt="css"></li>
+        <li class="skills__item"><img src="./assets/icons/img-scss.svg" alt="img-scss"></li>
+        <li class="skills__item"><img src="./assets/icons/github.svg" alt="github"></li>
+        <li class="skills__item"><img src="./assets/icons/ps.svg" alt="ps"></li>
+        <li class="skills__item"><img src="./assets/icons/figma.svg" alt="figma"></li>
+        <li class="skills__item"><img src="./assets/icons/gulp.svg" alt="gulp"></li>
+        <li class="skills__item"><img src="./assets/icons/pug.svg" alt="pug"></li>
+        <li class="skills__item skills__item_react"><img src="./assets/icons/react.svg" alt="react"></li>
+        <li class="skills__item"><img src="./assets/icons/js.svg" alt="logojs"></li>
+      </ul>
+    </section>
+    <section class="education wrapper element-animation">
+      <div class="education__title-wrap flex">
+        <h2 class="text-bold education__title" id="education">Education </h2>
+        <div class="education__title-img" id="symbol"><img src="./assets/icons/educ.svg" alt="educ"></div>
+      </div>
+      <ul class="education__box">
+        <li class="education__item flex">
+          <svg class="education__checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="education__checkmark-circle" cx="26" cy="26" r="25" fill="none"></circle>
+            <path class="education__checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
+          </svg>
+          <div class="text">Marine Academy specialist degree (2020)</div>
+        </li>
+        <li class="education__item flex">
+          <svg class="education__checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="education__checkmark-circle" cx="26" cy="26" r="25" fill="none"></circle>
+            <path class="education__checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
+          </svg>
+          <div class="text">Beetroot course Frontend Developer (2021) </div>
+        </li>
+      </ul>
+    </section>
+    <section class="portfolio element-animation">
+      <div class="portfolio__title-wrap flex">
+        <h2 class="text-bold portfolio__title" id="portfolio">Portfolio </h2>
+        <div class="portfolio__title-img an"><img src="./assets/icons/portfolio.svg" alt="portfl"></div>
+      </div>
+      <ul class="portfolio__box">
+        <li class="portfolio__col">
+          <div class="portfolio__item"><a href="https://eleonorapavlova.github.io/EleonoraPavlovaSiberian/build/main.html" target="_blank"><img class="portfolio__box_img" src="./assets/images/siberian.png" alt="siberian"></a></div>
+          <div class="portfolio__item"><a href="https://eleonorapavlova.github.io/EleonoraPavlovaSiberian/build/main.html" target="_blank">          <img class="portfolio__box_img" src="./assets/images/siberian1.png" alt="siberian"></a></div>
+          <div class="portfolio__item"><a href="https://20210502-fe.github.io/EleonoraPavlova_GRID/build/main.html" target="_blank"><img class="portfolio__box_img" src="./assets/images/grid.png" alt="grid"></a></div>
+          <div class="portfolio__item">   <a href="https://20210502-fe.github.io/EleonoraPavlova_GRID/build/main.html" target="_blank"><img class="portfolio__box_img" src="./assets/images/grid1.png" alt="grid"></a></div>
+        </li>
+        <li class="portfolio__col">
+          <div class="portfolio__item">  <a href="https://20210502-fe.github.io/YakovlevaEleonora_UGMONK/" target="_blank"><img class="portfolio__box_img" src="./assets/images/ugmonk.png" alt="ugmonk"></a></div>
+          <div class="portfolio__item">   <a href="https://20210502-fe.github.io/YakovlevaEleonora_UGMONK/" target="_blank"><img class="portfolio__box_img" src="./assets/images/ugmonk1.png" alt="ugmonk"></a></div>
+          <div class="portfolio__item"><a href="https://20210502-fe.github.io/YakovlevaEleonoraHungryPeople/" target="_blank"><img class="portfolio__box_img" src="./assets/images/hungry.png" alt="hungry"></a></div>
+          <div class="portfolio__item"><a href="https://20210502-fe.github.io/YakovlevaEleonoraHungryPeople/" target="_blank"><img class="portfolio__box_img" src="./assets/images/hungry1.png" alt="hungry"></a></div>
+        </li>
+        <li class="portfolio__col">
+          <div class="portfolio__item">   <a href="https://20210502-fe.github.io/YakovlevaEleonora_DreamHouse/" target="_blank">      <img class="portfolio__box_img" src="./assets/images/house2.png" alt="house"></a></div>
+          <div class="portfolio__item"><a href="https://20210502-fe.github.io/EleonoraPavlova_css_box_model/" target="_blank"><img class="portfolio__box_img" src="./assets/images/box.png" alt="box"></a></div>
+          <div class="portfolio__item"><a href="https://20210502-fe.github.io/EleonoraPavlova_css_box_model/" target="_blank">          <img class="portfolio__box_img" src="./assets/images/box1.png" alt="box"></a></div>
+        </li>
+        <li class="portfolio__col">
+          <div class="portfolio__item"><a href="https://20210502-fe.github.io/YakovlevaEleonora_DreamHouse/" target="_blank"><img class="portfolio__box_img" src="./assets/images/house.png" alt="house"></a></div>
+          <div class="portfolio__item">            <a href="https://20210502-fe.github.io/YakovlevaEleonora_DreamHouse/" target="_blank">       <img class="portfolio__box_img" src="./assets/images/house1.png" alt="house"></a></div>
+          <div class="portfolio__item"><a href="https://20210502-fe.github.io/YakovlevaEleonoraHungryPeople/" target="_blank"><img class="portfolio__box_img" src="./assets/images/hungry2.png" alt="hungry"></a></div>
+          <div class="portfolio__item"><a href="https://20210502-fe.github.io/YakovlevaEleonoraHungryPeople/" target="_blank"><img class="portfolio__box_img" src="./assets/images/hungry3.png" alt="hungry"></a></div>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer wrapper element-animation">
+      <div class="footer__title-wrap flex">
+        <h2 class="text-bold footer__title" id="contact">Contact</h2>
+        <div class="footer__title-img"><img src="./assets/icons/contact.svg" alt="contact"></div>
+      </div>
+      <div class="footer__contact" id="bottom">
+        <form class="footer__contact-input">  
+          <input class="footer__contact-input_style text text_pink" type="text" name="name" id="name" placeholder="Name">
+          <input class="footer__contact-input_style text text_pink" type="email" id="emaiil" name="emaiil" placeholder="Email">
+          <textarea class="footer__contact-input_style footer__contact-input_style-big text text_pink" name="message" placeholder="Message"></textarea>
+          <button class="footer__contact-input_style footer__contact-input_style-button text">SEND</button>
+        </form>
+        <div class="footer__contact-info">
+          <div class="footer__location grid grid_loc">
+            <div class="footer__img footer__img_location"> <img src="./assets/icons/location.svg" alt="location"></div>
+            <div class="footer__text">
+              <p class="text">Ukraine, Kiev</p>
+            </div>
+          </div>
+          <div class="footer__phone grid">
+            <div class="footer__img"> <img src="./assets/icons/footer-call.svg" alt="footer-call"></div>
+            <div class="footer__text"><a class="text text-hover" href="tel:+380687527904">Phone +38 068 752 79 04</a></div>
+          </div>
+          <div class="footer__mail grid">
+            <div class="footer__img"> <img src="./assets/icons/footer-mail.svg" alt="footer-mail"></div>
+            <div class="footer__text footer__text_mod"><a class="text text-hover" href="nebrudko18@gmail.com">Email: nebrudko18@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="footer__copyright-bottom"><a href="https://github.com/EleonoraPavlova"> 
+            <div class="text text-hover">© Copyright by EleonoraPavlova 2021</div></a></div>
+      </div>
+    </footer>
   </body>
+  <script type="text/javascript" src="js/header.js"></script>
+  <script type="text/javascript" src="js/about.js"></script>
+  <script type="text/javascript" src="js/skills.js"></script>
+  <script type="text/javascript" src="js/education.js"></script>
+  <script type="text/javascript" src="js/portfolio.js"></script>
+  <script type="text/javascript" src="js/footer.js"></script>
 </html>

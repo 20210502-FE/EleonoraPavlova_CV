@@ -1,0 +1,44 @@
+footer.footer.wrapper.element-animation
+    .footer__title-wrap.flex
+        h2.text-bold.footer__title#contact Contact
+        .footer__title-img
+            img(src="./assets/icons/contact.svg", alt="contact")
+    .footer__contact#bottom
+        form.footer__contact-input   
+            input.footer__contact-input_style.text.text_pink(
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+            )    
+            input.footer__contact-input_style.text.text_pink(
+                type="email"
+                id="emaiil"
+                name="emaiil"
+                placeholder="Email"
+            )
+            textarea.footer__contact-input_style.footer__contact-input_style-big.text.text_pink(
+                name="message"
+                placeholder="Message"
+            )
+            button.footer__contact-input_style.footer__contact-input_style-button.text SEND
+        .footer__contact-info
+            .footer__location.grid.grid_loc
+                .footer__img.footer__img_location 
+                    img(src="./assets/icons/location.svg", alt="location")
+                .footer__text
+                    p.text Ukraine, Kiev
+            .footer__phone.grid
+                .footer__img 
+                    img(src="./assets/icons/footer-call.svg", alt="footer-call")
+                .footer__text
+                    a(href="tel:+380687527904").text.text-hover Phone +38 068 752 79 04
+            .footer__mail.grid
+                .footer__img 
+                    img(src="./assets/icons/footer-mail.svg", alt="footer-mail")
+                .footer__text.footer__text_mod
+                    a(href="nebrudko18@gmail.com").text.text-hover Email: nebrudko18@gmail.com
+    .footer__copyright
+        .footer__copyright-bottom
+            a(href="https://github.com/EleonoraPavlova") 
+                .text.text-hover © Copyright by EleonoraPavlova 2021

@@ -1,0 +1,27 @@
+.skills {
+    padding-bottom: 50px;
+    &__title {
+        &-wrap {
+            padding-bottom: 20px;
+            justify-content: center;
+        }
+        &-img {
+            margin: 0 15px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+    &__item {
+        width: 70px;
+        height: 70px;
+        &_react {
+            grid-column: 2;
+        }
+    }
+}

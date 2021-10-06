@@ -1,0 +1,68 @@
+.portfolio {
+    padding-bottom: 60px;
+    margin: 0 20px;
+    &__title {
+        &-img {
+            width: 30px;
+            height: 30px;
+            margin: 0 15px;
+            transition: all 0.5s ease;
+        }
+        &-wrap {
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+    }
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 35px;
+        &_img {
+            overflow: hidden;
+            border-radius: 15px;
+        }
+    }
+    &__col {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-gap: 35px;
+        &:nth-child(11) {
+            grid-column: 3 / 5;
+        }
+    }
+
+    &__item {
+        overflow: hidden;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    }
+}
+$an: 0;
+$portfolio__title-img: 1;
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@while $an <= $portfolio__title-img {
+    .an:nth-child(#{$an}) {
+        display: inline-block;
+        animation: pulse 2s infinite linear;
+        animation-delay: #{$an/2}s;
+    }
+    $an: $an + 1;
+}
