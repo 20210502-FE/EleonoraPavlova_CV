@@ -22,7 +22,7 @@ button {
 
 .text {
   font-family: "Gluten";
-  color: #ffffff;
+  color: #0c1f00;
   font-size: 18px;
   line-height: 25px;
 }
@@ -37,7 +37,7 @@ button {
 
 .text-bold {
   font-family: "Gluten-bold";
-  color: #ffffff;
+  color: #0c1f00;
   font-size: 29px;
 }
 
@@ -90,7 +90,7 @@ html,
 body {
   min-height: 100%;
   position: relative;
-  background-image: url("../assets/images/bg.jpeg");
+  background-color: #d8ffbd;
 }
 
 a {
@@ -299,7 +299,6 @@ img {
 
 .about-me__content {
   padding: 15px;
-  background-color: #228b22;
   -webkit-border-radius: 25px;
           border-radius: 25px;
 }
@@ -531,7 +530,7 @@ img {
           border-radius: 50%;
   display: block;
   stroke-width: 4;
-  stroke: #ffffff;
+  stroke: #0c1f00;
   stroke-miterlimit: 10;
   -webkit-animation: fill 0.5s ease-in-out 0.5s forwards, scale 0.4s ease-in-out 0.9s both;
           animation: fill 0.5s ease-in-out 0.5s forwards, scale 0.4s ease-in-out 0.9s both;

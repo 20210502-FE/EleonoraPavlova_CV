@@ -7,7 +7,7 @@ button {
 
 .text {
     font-family: $font-style;
-    color: $color-white;
+    color: $color-fortext;
     font-size: 18px;
     line-height: 25px;
     &_gray {
@@ -20,7 +20,7 @@ button {
 
 .text-bold {
     font-family: $font-bold;
-    color: $color-white;
+    color: $color-fortext;
     font-size: 29px;
 }
 
